@@ -8,6 +8,7 @@ import {toRna} from "./exercise7";
 import {age} from "./exercise8";
 import {hey} from "./exercise12";
 import {Matrix} from "./exercise13";
+import {Robot} from "./exercise14";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -20,12 +21,19 @@ result = age('Earth', '1,000,000,000');
 result = hey('Okay if like my  spacebar  quite a bit?   ');
 // console.log({result});
 
-let matrixStr = "9 8 7\n5 3 2\n6 6 7";
-matrixStr = '1';
-const matrix = new Matrix(matrixStr);
+// let matrixStr = "9 8 7\n5 3 2\n6 6 7";
+// matrixStr = '1';
+// const matrix = new Matrix(matrixStr);
+//
+// console.log("Rows:");
+// matrix.getRows().forEach((row: any) => console.log(row));
+//
+// console.log("\nColumns:");
+// matrix.getColumns().forEach(column => console.log(column));
 
-console.log("Rows:");
-matrix.getRows().forEach((row: any) => console.log(row));
 
-console.log("\nColumns:");
-matrix.getColumns().forEach(column => console.log(column));
+const robot = new Robot();
+console.log(robot.getName());
+robot.resetName();
+console.log(robot.getName());
+robot.r
