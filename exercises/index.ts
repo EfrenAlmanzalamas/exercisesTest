@@ -6,6 +6,7 @@ import {decodedResistorValue} from "./exercise5";
 import {isLeap} from "./exercise6";
 import {toRna} from "./exercise7";
 import {age} from "./exercise8";
+import {hey} from "./exercise12";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -15,4 +16,5 @@ result = decodedResistorValue(['brown', 'black', 'green']);
 result = isLeap(2016);
 result = toRna('C');
 result = age('Earth', '1,000,000,000');
+result = hey('Okay if like my  spacebar  quite a bit?   ');
 console.log({result});
