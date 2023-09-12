@@ -2,13 +2,14 @@ import {hello} from "./exercise1";
 import {twoFer} from "./exercise2";
 import {colorCode} from "./exercise3";
 import {decodedValue} from "./exercise4";
-import {decodedResistorValue} from "./exercise5";
 import {isLeap} from "./exercise6";
 import {toRna} from "./exercise7";
 import {age} from "./exercise8";
 import {hey} from "./exercise12";
 import {Matrix} from "./exercise13";
 import {Robot} from "./exercise14";
+import { DnDCharacter } from "./exercise9";
+import { decodedResistorValue } from "./exercise5";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -32,8 +33,8 @@ result = hey('Okay if like my  spacebar  quite a bit?   ');
 // matrix.getColumns().forEach(column => console.log(column));
 
 
-const robot = new Robot();
-console.log(robot.getName());
-robot.resetName();
-console.log(robot.getName());
-robot.r
+// const robot = new Robot();
+// console.log(robot.getName());
+// robot.resetName();
+// console.log(robot.getName());
+// robot.r
