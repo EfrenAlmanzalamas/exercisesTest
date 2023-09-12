@@ -5,27 +5,30 @@ export class GradeSchool {
   ) { }
 
   roster() {
-    const localRoster = { ...this.internalRoster }
-    return localRoster
-  }
 
-  add(name: string, grade: number) {
-
-    let studentExists = false
+    let roster = {}
 
     for (let key in this.internalRoster) {
-      let gradeList = this.internalRoster[key as keyof typeof this.internalRoster] as string[]
-
-      console.log(gradeList);
-
-
-      if (gradeList.includes(name)) {
-        studentExists = true
+      roster = {
+        ...roster,
+        [key]: [...this.internalRoster[key as keyof typeof this.internalRoster]]
       }
     }
 
-    console.log(studentExists);
+    return roster
+  }
 
+  add(name: string, grade: number) {
+    for (let key in this.internalRoster) {
+      let gradeList = this.internalRoster[key as keyof typeof this.internalRoster] as string[]
+      if (gradeList.includes(name)) {
+        gradeList.splice(gradeList.indexOf(name), 1)
+        this.internalRoster = {
+          ...this.internalRoster,
+          [key]: gradeList
+        }
+      }
+    }
 
     this.internalRoster = {
       ...this.internalRoster,
@@ -36,8 +39,6 @@ export class GradeSchool {
   }
 
   grade(grade: number) {
-    // console.log(this.roster());
-
     return [...this.internalRoster[grade as keyof typeof this.internalRoster] || []]
   }
 
