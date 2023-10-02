@@ -10,6 +10,7 @@ import {Matrix} from "./exercise13";
 import {Robot} from "./exercise14";
 import { DnDCharacter } from "./exercise9";
 import { decodedResistorValue } from "./exercise5";
+import {Clock} from "./exercise16";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -38,3 +39,6 @@ result = hey('Okay if like my  spacebar  quite a bit?   ');
 // robot.resetName();
 // console.log(robot.getName());
 // robot.r
+// const abilityScore = DnDCharacter.generateAbilityScore()
+const clock = new Clock(-25, 0)
+console.log(clock.toString())

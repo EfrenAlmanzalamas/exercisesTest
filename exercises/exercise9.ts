@@ -14,7 +14,7 @@ export class DnDCharacter {
   }
 
   public static getModifierFor(abilityValue: number): number {
-   
+   console.log({abilityValue})
    return  Math.floor(((abilityValue - 10) / 2));    
   }
 }
