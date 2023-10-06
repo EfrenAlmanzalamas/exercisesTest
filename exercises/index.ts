@@ -11,6 +11,7 @@ import {Robot} from "./exercise14";
 import { DnDCharacter } from "./exercise9";
 import { decodedResistorValue } from "./exercise5";
 import {Clock} from "./exercise16";
+import {count} from "./exercise25";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -40,5 +41,8 @@ result = hey('Okay if like my  spacebar  quite a bit?   ');
 // console.log(robot.getName());
 // robot.r
 // const abilityScore = DnDCharacter.generateAbilityScore()
-const clock = new Clock(-25, 0)
-console.log(clock.toString())
+// const clock = new Clock(-25, 0)
+// console.log(clock.toString())
+
+const result2 = count(`'First: don't laugh. Then: don't cry. You're getting it.'`);
+console.log(result2);
