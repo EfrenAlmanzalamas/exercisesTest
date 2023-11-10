@@ -13,6 +13,7 @@ import { decodedResistorValue } from "./exercise5";
 import {Clock} from "./exercise16";
 import {count} from "./exercise25";
 import {translate} from "./exercise31";
+import {sayInEnglish} from "./say";
 
 let  result: any = hello();
 result = twoFer('Alice');
@@ -47,5 +48,5 @@ result = hey('Okay if like my  spacebar  quite a bit?   ');
 
 //const result2 = count(`'First: don't laugh. Then: don't cry. You're getting it.'`);
 
-const result2 = translate('AAA');
+const result2 = sayInEnglish(1);
 console.log(result2);
